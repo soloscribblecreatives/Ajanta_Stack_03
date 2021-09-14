@@ -179,7 +179,7 @@ function toCaptureTime(page_id){
 		var nextSlideNo = currentSlideNo + 1 ;	
 	} 
 
-	if(nextSlideNo <= 5){ //Total slides present
+	if(nextSlideNo <= 4){ //Total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -281,10 +281,10 @@ else {
 	//custom slide changes ends here....
 
 	else {
-		if(page_id <= 5){
+		if(page_id <= 4){
 			page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 6){
+		if(page_id == 5){
 			flag=1;
 		}
 	}
@@ -373,9 +373,6 @@ function set_pg_content(pg_id){
 		break;
 		case 4:
 		content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1366" height="1024" alt=""/></div>';
-		break;
-		case 5:
-		content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1366" height="1024" alt=""/></div>';
 		break;
 	}
 
